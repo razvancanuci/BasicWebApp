@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ceare cont</title>
+<style>
+    body{
+        background-color: aquamarine;
+        background-image:url("back.jpg");
+        font-style: italic;
+    }
+    button {
+    background-color: blue; 
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 16px;
+}
+h1{
+    font-size: 100px;
+}
+label{
+    font-size: 20px;
+}
+.textbar{
+    width: 200px;
+}
+a{
+    color:rgb(157, 165, 42);
+    font-size: 20px;
+}
+.err{
+    color:red;
+
+}
+</style>
+<script>
+</script>
+</head>
+<body>
+<center>
+    <br><br>
+    <h1>Creeaza cont</h1>
+    <br><br>
+    <form method="post" action='/addaccount'>
+    <div>
+        <label>Username:</label>
+        <input name="username" class="textbar" type="text" placeholer="ex: gigel123" required>
+    </div>
+        <div>
+        <label>Email:</label>
+        <input name="email" class="textbar" type="text" placeholer="ex: gigel123@gmail.com" required>
+        </div>
+    <div>
+        <label>Password:</label>
+        <input name="password" class="textbar" type="password" required >
+    </div>
+    <div>
+        <label>Confirm password:</label>
+        <input name="conf_password" class="textbar" type="password" required >
+    </div>
+    <p class="err">Parola nu coincide cu cea de confirmare/username sau email deja existente</p>
+    <br>
+    <div>
+        <button type="submit">Register</button>
+    </div>
+</form>
+
+
+</center>
+</body>
+</html>
